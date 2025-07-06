@@ -38,16 +38,16 @@ export default function HomePage() {
             }`}
           >
             <h1 className="text-5xl md:text-6xl text-green-800 mb-4 tracking-wide">
-              <span className="font-bold">Game Forge</span>
+              <span className="font-bold">Sports Vector</span>
             </h1>
             <h2 className="text-3xl md:text-4xl font-light text-green-700 mb-16 tracking-wide">
-              Democratizing Access to AI Strategy for all sports
+              Advancing &amp; Making Sports Strategy Accessible with AI
             </h2>
 
             <div className="space-y-8 text-lg md:text-xl leading-relaxed text-gray-700 font-serif">
               <p>
-                Game Forge is a sports tech startup on a mission to democratize AI-powered strategy for every level of
-                sport, starting with cricket. We believe the advanced tools used by professional teams should not be
+                Sports Vector is a sports tech startup on a mission to democratize AI-powered strategy for every level
+                of sport, starting with cricket. We believe the advanced tools used by professional teams should not be
                 limited to those with big budgets or massive staff. Strategy should be accessible to everyone, from
                 school teams to national academies.
               </p>
@@ -164,10 +164,10 @@ export default function HomePage() {
             <p className="text-gray-200 text-lg font-serif">
               Please email your resume and a short note about what excites you to{" "}
               <Link
-                href="mailto:hiring@gameforge.com"
+                href="mailto:hiring@sportsvector.co"
                 className="text-white underline hover:text-gray-300 transition-colors font-semibold"
               >
-                hiring@gameforge.com
+                hiring@sportsvector.co
               </Link>
               .
             </p>
@@ -179,7 +179,7 @@ export default function HomePage() {
       <footer className="bg-white py-12 border-t border-green-200">
         <div className="max-w-6xl mx-auto px-6">
           <div className="flex flex-col items-center space-y-6">
-            <img src="/logo.png" alt="Game Forge" className="h-16 w-auto" />
+            <img src="/logo.png" alt="Sports Vector" className="h-16 w-auto" />
             <div className="flex justify-center space-x-12 text-gray-500">
               <Link
                 href="https://cricketstrategyzer.com/blog"
@@ -190,15 +190,15 @@ export default function HomePage() {
                 Blog
               </Link>
               <Link
-                href="https://www.linkedin.com/company/game-forge-sports"
+                href="https://www.linkedin.com/company/sports-vector"
                 className="hover:text-green-600 transition-colors"
                 target="_blank"
                 rel="noopener noreferrer"
               >
                 LinkedIn
               </Link>
-              <Link href="mailto:hiring@gameforge.com" className="hover:text-green-600 transition-colors">
-                hiring@gameforge.com
+              <Link href="mailto:hiring@sportsvector.co" className="hover:text-green-600 transition-colors">
+                hiring@sportsvector.co
               </Link>
             </div>
           </div>

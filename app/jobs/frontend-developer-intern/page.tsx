@@ -78,8 +78,9 @@ export default function FrontendDeveloperInternPage() {
           <h2 className="text-4xl font-semibold text-white mb-6">About</h2>
           <div className="space-y-4 text-gray-300">
             <p>
-              Game Forge is an AI startup with a mission to democratize AI strategy for all sports. We believe strategy
-              should be a weapon in every team's arsenal — not just those with analysts, budgets, or big data labs.
+              Sports Vector is an AI startup with a mission to democratize AI strategy for all sports. We believe
+              strategy should be a weapon in every team's arsenal — not just those with analysts, budgets, or big data
+              labs.
             </p>
             <p>
               Our flagship product, Cricket Strategyzer, helps grassroots and semi-pro teams prepare, adapt, and win
@@ -95,10 +96,10 @@ export default function FrontendDeveloperInternPage() {
             <p>
               To apply, please email your resume and a short note on a project you're proud of to{" "}
               <Link
-                href="mailto:hiring@gameforge.com"
+                href="mailto:hiring@sportsvector.co"
                 className="text-white underline hover:text-gray-300 font-semibold"
               >
-                hiring@gameforge.com
+                hiring@sportsvector.co
               </Link>
               .
             </p>
@@ -114,7 +115,7 @@ export default function FrontendDeveloperInternPage() {
       <footer className="bg-white py-12 border-t border-green-200">
         <div className="max-w-6xl mx-auto px-6">
           <div className="flex flex-col items-center space-y-6">
-            <img src="/logo.png" alt="Game Forge" className="h-16 w-auto" />
+            <img src="/logo.png" alt="Sports Vector" className="h-16 w-auto" />
             <div className="flex justify-center space-x-12 text-gray-500">
               <Link
                 href="https://cricketstrategyzer.com/blog"
@@ -125,15 +126,15 @@ export default function FrontendDeveloperInternPage() {
                 Blog
               </Link>
               <Link
-                href="https://www.linkedin.com/company/game-forge-sports"
+                href="https://www.linkedin.com/company/sports-vector"
                 className="hover:text-green-600 transition-colors"
                 target="_blank"
                 rel="noopener noreferrer"
               >
                 LinkedIn
               </Link>
-              <Link href="mailto:hiring@gameforge.com" className="hover:text-green-600 transition-colors">
-                hiring@gameforge.com
+              <Link href="mailto:hiring@sportsvector.co" className="hover:text-green-600 transition-colors">
+                hiring@sportsvector.co
               </Link>
             </div>
           </div>
