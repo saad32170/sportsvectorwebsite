@@ -378,7 +378,7 @@ export default function HomePage() {
                 href="mailto:careers@sportsvector.co"
                 className="text-white underline hover:text-gray-300 transition-colors font-semibold"
               >
-                careers@sportsvector.co
+                hamza@sportsvector.co
               </Link>
               .
             </p>
@@ -409,7 +409,7 @@ export default function HomePage() {
                 LinkedIn
               </Link>
               <Link href="mailto:careers@sportsvector.co" className="hover:text-green-600 transition-colors">
-                careers@sportsvector.co
+                hamza@sportsvector.co
               </Link>
             </div>
           </div>
