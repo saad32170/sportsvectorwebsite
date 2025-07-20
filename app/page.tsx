@@ -2,10 +2,11 @@
 
 import { useEffect, useState } from "react"
 import Link from "next/link"
-import { Puzzle, FileText, AlertTriangle, Lock } from "lucide-react"
+import { Puzzle, FileText, AlertTriangle, Lock, Menu, X } from "lucide-react"
 
 export default function HomePage() {
   const [isVisible, setIsVisible] = useState(false)
+  const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false)
 
   useEffect(() => {
     const timer = setTimeout(() => {
@@ -33,8 +34,8 @@ export default function HomePage() {
               <img src="/sports-vector-logo.png" alt="Sports Vector" className="h-10 w-auto" />
             </div>
 
-            {/* Navigation Links - Centered */}
-            <div className="absolute left-1/2 transform -translate-x-1/2 flex space-x-4">
+            {/* Desktop Navigation Links - Centered */}
+            <div className="hidden md:flex absolute left-1/2 transform -translate-x-1/2 space-x-4">
               <button
                 onClick={() => scrollToSection("mission")}
                 className="relative px-6 py-2 text-green-900 font-medium text-lg rounded-lg transition-all duration-300 ease-out
@@ -66,7 +67,57 @@ export default function HomePage() {
                 Careers
               </button>
             </div>
+
+            {/* Mobile menu button */}
+            <div className="md:hidden">
+              <button
+                onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)}
+                className="relative p-2 text-green-900 rounded-lg transition-all duration-300 ease-out
+                         hover:bg-white/20 hover:backdrop-blur-md hover:shadow-md hover:shadow-black/10
+                         active:bg-white/30 active:scale-95"
+              >
+                {isMobileMenuOpen ? <X className="h-6 w-6" /> : <Menu className="h-6 w-6" />}
+              </button>
+            </div>
           </div>
+
+          {/* Mobile menu */}
+          {isMobileMenuOpen && (
+            <div className="md:hidden absolute top-16 left-0 right-0 bg-white/95 backdrop-blur-xl border-b border-white/40 shadow-lg">
+              <div className="px-6 py-4 space-y-2">
+                <button
+                  onClick={() => {
+                    scrollToSection("mission")
+                    setIsMobileMenuOpen(false)
+                  }}
+                  className="block w-full text-left px-4 py-3 text-green-900 font-medium text-lg rounded-lg transition-all duration-300 ease-out
+                           hover:bg-white/20 hover:backdrop-blur-md hover:shadow-md hover:shadow-black/10"
+                >
+                  Mission
+                </button>
+                <button
+                  onClick={() => {
+                    scrollToSection("products")
+                    setIsMobileMenuOpen(false)
+                  }}
+                  className="block w-full text-left px-4 py-3 text-green-900 font-medium text-lg rounded-lg transition-all duration-300 ease-out
+                           hover:bg-white/20 hover:backdrop-blur-md hover:shadow-md hover:shadow-black/10"
+                >
+                  Products
+                </button>
+                <button
+                  onClick={() => {
+                    scrollToSection("careers")
+                    setIsMobileMenuOpen(false)
+                  }}
+                  className="block w-full text-left px-4 py-3 text-green-900 font-medium text-lg rounded-lg transition-all duration-300 ease-out
+                           hover:bg-white/20 hover:backdrop-blur-md hover:shadow-md hover:shadow-black/10"
+                >
+                  Careers
+                </button>
+              </div>
+            </div>
+          )}
         </div>
       </nav>
 
@@ -324,10 +375,10 @@ export default function HomePage() {
             <p className="text-gray-200 text-lg font-serif">
               Please email your resume and a short note about what excites you to{" "}
               <Link
-                href="mailto:hiring@sportsvector.co"
+                href="mailto:careers@sportsvector.co"
                 className="text-white underline hover:text-gray-300 transition-colors font-semibold"
               >
-                hiring@sportsvector.co
+                careers@sportsvector.co
               </Link>
               .
             </p>
@@ -357,8 +408,8 @@ export default function HomePage() {
               >
                 LinkedIn
               </Link>
-              <Link href="mailto:hiring@sportsvector.co" className="hover:text-green-600 transition-colors">
-                hiring@sportsvector.co
+              <Link href="mailto:careers@sportsvector.co" className="hover:text-green-600 transition-colors">
+                careers@sportsvector.co
               </Link>
             </div>
           </div>
