@@ -16,6 +16,7 @@ import {
   Calendar,
   Quote,
   Play,
+  AlertTriangle,
 } from "lucide-react"
 
 export default function WhatWeDoPage() {
@@ -77,7 +78,7 @@ export default function WhatWeDoPage() {
               <Link
                 href="/#careers"
                 className="relative px-6 py-2 text-green-900 font-medium text-lg rounded-lg transition-all duration-300 ease-out
-                         hover:bg-white/20 hover:backdrop-blur-md hover:shadow-md hover:shadow-md hover:shadow-black/10 hover:scale-105
+                         hover:bg-white/20 hover:backdrop-blur-md hover:shadow-md hover:shadow-black/10 hover:scale-105
                          active:bg-white/30 active:scale-95 active:shadow-inner
                          before:absolute before:inset-0 before:rounded-lg before:border before:border-white/30 before:opacity-0 before:transition-opacity before:duration-300
                          hover:before:opacity-100"
@@ -193,6 +194,120 @@ export default function WhatWeDoPage() {
                 transform how teams prepare, play, and improve.
               </p>
             </div>
+
+            {/* Who We're Building For */}
+            <section className="mb-20">
+              <div className="bg-gradient-to-br from-green-50 to-green-100 rounded-2xl p-12">
+                <div className="text-center">
+                  <h3 className="text-3xl font-bold text-green-800 mb-6">Built for Sports Teams Across All Levels</h3>
+                  <p className="text-xl text-gray-600 max-w-4xl mx-auto leading-relaxed mb-8">
+                    From grassroots clubs to semi-professional squads, our platforms serve teams who want to compete
+                    with strategic intelligence but lack access to professional-level tactical resources.
+                  </p>
+                  <div className="grid md:grid-cols-3 gap-8">
+                    <div className="text-center">
+                      <div className="w-16 h-16 bg-green-200 rounded-full flex items-center justify-center mx-auto mb-4">
+                        <Users className="w-8 h-8 text-green-700" />
+                      </div>
+                      <h4 className="text-lg font-bold text-green-800 mb-2">Grassroots Teams</h4>
+                      <p className="text-gray-600 text-sm">
+                        School teams, local clubs, and community organizations seeking strategic advantages
+                      </p>
+                    </div>
+                    <div className="text-center">
+                      <div className="w-16 h-16 bg-green-200 rounded-full flex items-center justify-center mx-auto mb-4">
+                        <Target className="w-8 h-8 text-green-700" />
+                      </div>
+                      <h4 className="text-lg font-bold text-green-800 mb-2">Competitive Clubs</h4>
+                      <p className="text-gray-600 text-sm">
+                        Amateur and semi-professional teams competing in leagues and tournaments
+                      </p>
+                    </div>
+                    <div className="text-center">
+                      <div className="w-16 h-16 bg-green-200 rounded-full flex items-center justify-center mx-auto mb-4">
+                        <Brain className="w-8 h-8 text-green-700" />
+                      </div>
+                      <h4 className="text-lg font-bold text-green-800 mb-2">Coaches & Analysts</h4>
+                      <p className="text-gray-600 text-sm">
+                        Individual coaches and analysts who need professional-grade strategic tools
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </section>
+
+            {/* Why Cricket Strategyzer - Problem Section */}
+            <section className="mb-20">
+              <div className="text-center mb-12">
+                <h3 className="text-3xl font-bold text-green-800 mb-6">Why Cricket Strategyzer?</h3>
+                <p className="text-xl text-gray-600 max-w-3xl mx-auto">
+                  Addressing the core challenges teams face in strategic planning.
+                </p>
+              </div>
+
+              <div className="grid md:grid-cols-2 gap-8 mb-12">
+                {/* Problem 1 */}
+                <div className="bg-red-50 border-l-4 border-red-500 rounded-lg p-6">
+                  <div className="flex items-start">
+                    <AlertTriangle className="w-6 h-6 text-red-500 mr-4 mt-1 flex-shrink-0" />
+                    <div>
+                      <h4 className="text-lg font-bold text-red-800 mb-3">
+                        No platform to plan everything in one place
+                      </h4>
+                      <p className="text-red-700">
+                        Teams struggle with scattered tools and disconnected planning processes.
+                      </p>
+                    </div>
+                  </div>
+                </div>
+
+                {/* Problem 2 */}
+                <div className="bg-red-50 border-l-4 border-red-500 rounded-lg p-6">
+                  <div className="flex items-start">
+                    <AlertTriangle className="w-6 h-6 text-red-500 mr-4 mt-1 flex-shrink-0" />
+                    <div>
+                      <h4 className="text-lg font-bold text-red-800 mb-3">
+                        Data insights are difficult and nearly impossible
+                      </h4>
+                      <p className="text-red-700">
+                        Complex analytics remain locked away from teams that need them most.
+                      </p>
+                    </div>
+                  </div>
+                </div>
+
+                {/* Problem 3 */}
+                <div className="bg-red-50 border-l-4 border-red-500 rounded-lg p-6">
+                  <div className="flex items-start">
+                    <AlertTriangle className="w-6 h-6 text-red-500 mr-4 mt-1 flex-shrink-0" />
+                    <div>
+                      <h4 className="text-lg font-bold text-red-800 mb-3">
+                        Players do not know what to do during games
+                      </h4>
+                      <p className="text-red-700">
+                        Lack of clear communication leaves players confused in crucial moments.
+                      </p>
+                    </div>
+                  </div>
+                </div>
+
+                {/* Problem 4 */}
+                <div className="bg-red-50 border-l-4 border-red-500 rounded-lg p-6">
+                  <div className="flex items-start">
+                    <AlertTriangle className="w-6 h-6 text-red-500 mr-4 mt-1 flex-shrink-0" />
+                    <div>
+                      <h4 className="text-lg font-bold text-red-800 mb-3">
+                        No access to professional-level strategies
+                      </h4>
+                      <p className="text-red-700">
+                        Elite tactics remain exclusive to top-tier teams with unlimited resources.
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </section>
 
             {/* Platform Vision */}
             <section className="mb-20">
@@ -486,7 +601,7 @@ export default function WhatWeDoPage() {
                   </div>
                 </div>
 
-                <div className="bg-white rounded-xl p-6 shadow-lg hover:shadow-xl transition-shadow border-l-4 border-green-green-500">
+                <div className="bg-white rounded-xl p-6 shadow-lg hover:shadow-xl transition-shadow border-l-4 border-green-500">
                   <Quote className="w-8 h-8 text-green-500 mb-4" />
                   <p className="text-gray-700 mb-4 italic">"This will help me a lot as an analyst"</p>
                   <div className="border-t pt-4">
@@ -561,21 +676,15 @@ export default function WhatWeDoPage() {
                 Join the strategic revolution that's transforming how teams prepare, play, and improve. Start with
                 Cricket Strategyzer launching in August 2025 and be part of our multi-sport expansion journey.
               </p>
-              <div className="flex flex-col sm:flex-row gap-4 justify-center">
+              <div className="flex justify-center">
                 <Link
                   href="https://cricketstrategyzer.com"
                   target="_blank"
                   rel="noopener noreferrer"
                   className="inline-flex items-center px-8 py-4 bg-white text-green-900 font-semibold rounded-lg hover:bg-gray-100 transition-colors text-lg shadow-lg hover:shadow-xl transform hover:scale-105"
                 >
-                  Try Cricket Strategyzer Free
+                  Try Cricket Strategyzer
                   <ArrowRight className="w-5 h-5 ml-2" />
-                </Link>
-                <Link
-                  href="mailto:info@sportsvector.co"
-                  className="inline-flex items-center px-8 py-4 border-2 border-white text-white font-semibold rounded-lg hover:bg-white hover:text-green-900 transition-colors text-lg"
-                >
-                  Schedule a Demo
                 </Link>
               </div>
             </div>

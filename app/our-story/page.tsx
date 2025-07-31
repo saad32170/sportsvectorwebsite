@@ -2,7 +2,7 @@
 
 import { useEffect, useState } from "react"
 import Link from "next/link"
-import { Menu, X, Target, Users, Zap, Globe, ArrowRight, CheckCircle, TrendingUp } from "lucide-react"
+import { Menu, X, Target, Users, Globe, ArrowRight } from "lucide-react"
 
 export default function OurStoryPage() {
   const [isVisible, setIsVisible] = useState(false)
@@ -175,7 +175,7 @@ export default function OurStoryPage() {
               <p className="text-xl text-gray-700 max-w-4xl mx-auto leading-relaxed font-serif">
                 Sports Vector was born from a simple frustration: watching talented teams lose not because they lacked
                 skill, but because they lacked the strategic insights that could have changed everything. As former
-                professional cricketers turned engineers, we knew there had to be a better way.
+                semi-professional cricketers turned engineers, we knew there had to be a better way.
               </p>
             </div>
 
@@ -236,164 +236,30 @@ export default function OurStoryPage() {
               </div>
             </section>
 
-            {/* The Eureka Moment */}
+            {/* Our Mission and Vision */}
             <section className="mb-20">
-              <div className="text-center mb-12">
-                <h3 className="text-3xl font-bold text-green-800 mb-6">The Eureka Moment</h3>
-                <p className="text-xl text-gray-600 max-w-3xl mx-auto">
-                  It happened during a crucial match in Qatar. Our team had all the talent but was making strategic
-                  errors that any AI system could have prevented. That's when we realized: the future of sports isn't
-                  just about better athletes—it's about smarter strategy.
-                </p>
-              </div>
-
               <div className="bg-green-900 text-white rounded-2xl p-12">
-                <div className="grid md:grid-cols-3 gap-8 text-center">
+                <div className="grid md:grid-cols-2 gap-12 text-center">
                   <div>
-                    <div className="w-16 h-16 bg-green-300 rounded-full flex items-center justify-center mx-auto mb-4">
+                    <div className="w-16 h-16 bg-green-300 rounded-full flex items-center justify-center mx-auto mb-6">
                       <Target className="w-8 h-8 text-green-800" />
                     </div>
-                    <h4 className="text-xl font-bold mb-3">The Vision</h4>
-                    <p className="text-green-100">
-                      What if every team, regardless of budget, could access the same strategic intelligence as elite
-                      professional squads?
+                    <h4 className="text-2xl font-bold mb-4">Our Vision</h4>
+                    <p className="text-green-100 leading-relaxed">
+                      Our vision with Cricket Strategyzer is to build a product that allows teams to alter strategies
+                      in-game from multiple inputs such as match scenario, ground insights, historical insights, and
+                      individual in-game player data.
                     </p>
                   </div>
                   <div>
-                    <div className="w-16 h-16 bg-green-300 rounded-full flex items-center justify-center mx-auto mb-4">
-                      <Zap className="w-8 h-8 text-green-800" />
-                    </div>
-                    <h4 className="text-xl font-bold mb-3">The Technology</h4>
-                    <p className="text-green-100">
-                      AI that doesn't just analyze data, but provides real-time strategic recommendations that teams can
-                      actually implement.
-                    </p>
-                  </div>
-                  <div>
-                    <div className="w-16 h-16 bg-green-300 rounded-full flex items-center justify-center mx-auto mb-4">
+                    <div className="w-16 h-16 bg-green-300 rounded-full flex items-center justify-center mx-auto mb-6">
                       <Globe className="w-8 h-8 text-green-800" />
                     </div>
-                    <h4 className="text-xl font-bold mb-3">The Impact</h4>
-                    <p className="text-green-100">
-                      Democratizing elite-level sports strategy to level the playing field for teams worldwide.
+                    <h4 className="text-2xl font-bold mb-4">Our Mission</h4>
+                    <p className="text-green-100 leading-relaxed">
+                      Access for everyone and bring AI strategy in sports for everyone. We believe every team,
+                      regardless of budget or location, deserves access to professional-level strategic intelligence.
                     </p>
-                  </div>
-                </div>
-              </div>
-            </section>
-
-            {/* Building the Solution */}
-            <section className="mb-20">
-              <h3 className="text-3xl font-bold text-green-800 mb-12 text-center">Building the Solution</h3>
-
-              <div className="space-y-12">
-                <div className="grid md:grid-cols-2 gap-12 items-center">
-                  <div>
-                    <h4 className="text-2xl font-bold text-green-800 mb-6">Phase 1: Cricket Strategyzer</h4>
-                    <p className="text-lg text-gray-700 mb-6 leading-relaxed">
-                      We started with cricket because we knew it intimately. Every strategic nuance, every tactical
-                      decision point, every moment where AI could make the difference between winning and losing.
-                    </p>
-                    <div className="space-y-3">
-                      <div className="flex items-center">
-                        <CheckCircle className="w-5 h-5 text-green-600 mr-3" />
-                        <span className="text-gray-700">End-to-end team management platform</span>
-                      </div>
-                      <div className="flex items-center">
-                        <CheckCircle className="w-5 h-5 text-green-600 mr-3" />
-                        <span className="text-gray-700">Real-time strategic recommendations</span>
-                      </div>
-                      <div className="flex items-center">
-                        <CheckCircle className="w-5 h-5 text-green-600 mr-3" />
-                        <span className="text-gray-700">Accessible pricing for all team levels</span>
-                      </div>
-                    </div>
-                  </div>
-                  <div className="bg-green-50 p-8 rounded-xl">
-                    <div className="text-center">
-                      <img
-                        src="/cricket-strategizer-logo.png"
-                        alt="Cricket Strategyzer"
-                        className="h-24 mx-auto mb-4"
-                      />
-                      <h5 className="text-xl font-bold text-green-800 mb-2">Live & Growing</h5>
-                      <p className="text-gray-600 mb-4">
-                        Already helping teams make smarter decisions from team selection to match execution.
-                      </p>
-                      <Link
-                        href="https://cricketstrategyzer.com"
-                        target="_blank"
-                        rel="noopener noreferrer"
-                        className="inline-flex items-center px-6 py-3 bg-green-700 text-white font-semibold rounded-lg hover:bg-green-800 transition-colors"
-                      >
-                        Try It Now
-                        <ArrowRight className="w-4 h-4 ml-2" />
-                      </Link>
-                    </div>
-                  </div>
-                </div>
-
-                <div className="grid md:grid-cols-2 gap-12 items-center">
-                  <div className="bg-blue-50 p-8 rounded-xl order-2 md:order-1">
-                    <div className="text-center">
-                      <div className="w-24 h-24 bg-blue-200 rounded-full flex items-center justify-center mx-auto mb-4">
-                        <Globe className="w-12 h-12 text-blue-700" />
-                      </div>
-                      <h5 className="text-xl font-bold text-blue-800 mb-2">Multi-Sport Vision</h5>
-                      <p className="text-gray-600">
-                        Football, basketball, tennis, and beyond. The same AI principles, adapted for every sport's
-                        unique strategic landscape.
-                      </p>
-                    </div>
-                  </div>
-                  <div className="order-1 md:order-2">
-                    <h4 className="text-2xl font-bold text-green-800 mb-6">Phase 2: Global Expansion</h4>
-                    <p className="text-lg text-gray-700 mb-6 leading-relaxed">
-                      Cricket was just the beginning. We're building the foundational AI that can understand, analyze,
-                      and optimize strategy for any sport, at any level, anywhere in the world.
-                    </p>
-                    <div className="space-y-3">
-                      <div className="flex items-center">
-                        <TrendingUp className="w-5 h-5 text-blue-600 mr-3" />
-                        <span className="text-gray-700">Multi-sport AI engine in development</span>
-                      </div>
-                      <div className="flex items-center">
-                        <TrendingUp className="w-5 h-5 text-blue-600 mr-3" />
-                        <span className="text-gray-700">Global team partnerships expanding</span>
-                      </div>
-                      <div className="flex items-center">
-                        <TrendingUp className="w-5 h-5 text-blue-600 mr-3" />
-                        <span className="text-gray-700">Platform scaling for millions of users</span>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </section>
-
-            {/* Our Mission Today */}
-            <section className="mb-20">
-              <div className="bg-gradient-to-br from-green-100 to-green-50 rounded-2xl p-12">
-                <h3 className="text-3xl font-bold text-green-800 mb-8 text-center">Our Mission Today</h3>
-                <div className="max-w-4xl mx-auto text-center">
-                  <p className="text-xl text-gray-700 leading-relaxed mb-8 font-serif">
-                    We're not just building software. We're democratizing the strategic intelligence that has been
-                    locked away in elite professional sports for decades. Every school team, every amateur club, every
-                    aspiring athlete deserves access to the same strategic insights that drive championship victories.
-                  </p>
-                  <div className="grid md:grid-cols-3 gap-8">
-                    <div className="text-center">
-                      <div className="text-3xl font-bold text-green-800 mb-2">10,000+</div>
-                      <p className="text-gray-600">Teams to Impact by 2025</p>
-                    </div>
-                    <div className="text-center">
-                      <div className="text-3xl font-bold text-green-800 mb-2">5</div>
-                      <p className="text-gray-600">Sports Platforms Planned</p>
-                    </div>
-                    <div className="text-center">
-                      <div className="text-3xl font-bold text-green-800 mb-2">∞</div>
-                      <p className="text-gray-600">Potential Unlocked</p>
-                    </div>
                   </div>
                 </div>
               </div>
@@ -414,7 +280,7 @@ export default function OurStoryPage() {
                   rel="noopener noreferrer"
                   className="inline-flex items-center px-8 py-4 bg-white text-green-900 font-semibold rounded-lg hover:bg-gray-100 transition-colors text-lg shadow-lg hover:shadow-xl transform hover:scale-105"
                 >
-                  Try Our Platform
+                  Try Cricket Strategyzer
                   <ArrowRight className="w-5 h-5 ml-2" />
                 </Link>
                 <Link
