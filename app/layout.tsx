@@ -1,5 +1,8 @@
 import type React from "react"
 import type { Metadata } from "next"
+import { Analytics } from "@vercel/analytics/next"
+import { SpeedInsights } from "@vercel/speed-insights/next"
+import { Suspense } from "react"
 import "./globals.css"
 
 export const metadata: Metadata = {
@@ -18,7 +21,13 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
-      <body>{children}</body>
+      <body>
+        <Suspense fallback={<div>Loading...</div>}>
+          {children}
+          <Analytics />
+          <SpeedInsights />
+        </Suspense>
+      </body>
     </html>
   )
 }

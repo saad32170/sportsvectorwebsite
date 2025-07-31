@@ -36,26 +36,36 @@ export default function HomePage() {
 
             {/* Desktop Navigation Links - Centered */}
             <div className="hidden md:flex absolute left-1/2 transform -translate-x-1/2 space-x-4">
-              <button
-                onClick={() => scrollToSection("mission")}
+              <Link
+                href="/our-story"
                 className="relative px-6 py-2 text-green-900 font-medium text-lg rounded-lg transition-all duration-300 ease-out
                          hover:bg-white/20 hover:backdrop-blur-md hover:shadow-md hover:shadow-black/10 hover:scale-105
                          active:bg-white/30 active:scale-95 active:shadow-inner
                          before:absolute before:inset-0 before:rounded-lg before:border before:border-white/30 before:opacity-0 before:transition-opacity before:duration-300
                          hover:before:opacity-100"
               >
-                Mission
-              </button>
-              <button
-                onClick={() => scrollToSection("products")}
+                Our Story
+              </Link>
+              <Link
+                href="/who-we-are"
                 className="relative px-6 py-2 text-green-900 font-medium text-lg rounded-lg transition-all duration-300 ease-out
                          hover:bg-white/20 hover:backdrop-blur-md hover:shadow-md hover:shadow-black/10 hover:scale-105
                          active:bg-white/30 active:scale-95 active:shadow-inner
                          before:absolute before:inset-0 before:rounded-lg before:border before:border-white/30 before:opacity-0 before:transition-opacity before:duration-300
                          hover:before:opacity-100"
               >
-                Products
-              </button>
+                Team
+              </Link>
+              <Link
+                href="/what-we-do"
+                className="relative px-6 py-2 text-green-900 font-medium text-lg rounded-lg transition-all duration-300 ease-out
+                         hover:bg-white/20 hover:backdrop-blur-md hover:shadow-md hover:shadow-black/10 hover:scale-105
+                         active:bg-white/30 active:scale-95 active:shadow-inner
+                         before:absolute before:inset-0 before:rounded-lg before:border before:border-white/30 before:opacity-0 before:transition-opacity before:duration-300
+                         hover:before:opacity-100"
+              >
+                Platform
+              </Link>
               <button
                 onClick={() => scrollToSection("careers")}
                 className="relative px-6 py-2 text-green-900 font-medium text-lg rounded-lg transition-all duration-300 ease-out
@@ -85,26 +95,30 @@ export default function HomePage() {
           {isMobileMenuOpen && (
             <div className="md:hidden absolute top-16 left-0 right-0 bg-white/95 backdrop-blur-xl border-b border-white/40 shadow-lg">
               <div className="px-6 py-4 space-y-2">
-                <button
-                  onClick={() => {
-                    scrollToSection("mission")
-                    setIsMobileMenuOpen(false)
-                  }}
+                <Link
+                  href="/our-story"
+                  onClick={() => setIsMobileMenuOpen(false)}
                   className="block w-full text-left px-4 py-3 text-green-900 font-medium text-lg rounded-lg transition-all duration-300 ease-out
                            hover:bg-white/20 hover:backdrop-blur-md hover:shadow-md hover:shadow-black/10"
                 >
-                  Mission
-                </button>
-                <button
-                  onClick={() => {
-                    scrollToSection("products")
-                    setIsMobileMenuOpen(false)
-                  }}
+                  Our Story
+                </Link>
+                <Link
+                  href="/who-we-are"
+                  onClick={() => setIsMobileMenuOpen(false)}
                   className="block w-full text-left px-4 py-3 text-green-900 font-medium text-lg rounded-lg transition-all duration-300 ease-out
                            hover:bg-white/20 hover:backdrop-blur-md hover:shadow-md hover:shadow-black/10"
                 >
-                  Products
-                </button>
+                  Team
+                </Link>
+                <Link
+                  href="/what-we-do"
+                  onClick={() => setIsMobileMenuOpen(false)}
+                  className="block w-full text-left px-4 py-3 text-green-900 font-medium text-lg rounded-lg transition-all duration-300 ease-out
+                           hover:bg-white/20 hover:backdrop-blur-md hover:shadow-md hover:shadow-black/10"
+                >
+                  Platform
+                </Link>
                 <button
                   onClick={() => {
                     scrollToSection("careers")
@@ -375,10 +389,10 @@ export default function HomePage() {
             <p className="text-gray-200 text-lg font-serif">
               Please email your resume and a short note about what excites you to{" "}
               <Link
-                href="mailto:careers@sportsvector.co"
+                href="mailto:info@sportsvector.co"
                 className="text-white underline hover:text-gray-300 transition-colors font-semibold"
               >
-                hamza@sportsvector.co
+                info@sportsvector.co
               </Link>
               .
             </p>
@@ -408,8 +422,8 @@ export default function HomePage() {
               >
                 LinkedIn
               </Link>
-              <Link href="mailto:careers@sportsvector.co" className="hover:text-green-600 transition-colors">
-                hamza@sportsvector.co
+              <Link href="mailto:info@sportsvector.co" className="hover:text-green-600 transition-colors">
+                info@sportsvector.co
               </Link>
             </div>
           </div>
