@@ -100,10 +100,10 @@ export default function MarketingPage() {
             <p>
               To apply, please email your resume and a short note on a project you're proud of to{" "}
               <Link
-                href="mailto:hamza@sportsvector.co"
+                href="mailto:careers@sportsvector.co"
                 className="text-white underline hover:text-gray-300 font-semibold"
               >
-                hamza@sportsvector.co
+                careers@sportsvector.co
               </Link>
               .
             </p>
@@ -137,8 +137,8 @@ export default function MarketingPage() {
               >
                 LinkedIn
               </Link>
-              <Link href="mailto:hamza@sportsvector.co" className="hover:text-green-600 transition-colors">
-                hamza@sportsvector.co
+              <Link href="mailto:careers@sportsvector.co" className="hover:text-green-600 transition-colors">
+                careers@sportsvector.co
               </Link>
             </div>
           </div>
