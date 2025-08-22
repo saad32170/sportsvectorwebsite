@@ -1,0 +1,239 @@
+# Robots.txt for Sports Vector - AI Strategy for Every Sport
+# Website: https://sportsvector.co
+# Contact: info@sportsvector.co
+# Last Updated: January 22, 2025 19:16:02 UTC
+
+# Global Rules for All Crawlers
+User-agent: *
+Allow: /
+
+# Explicitly allow important pages and directories
+Allow: /jobs/
+Allow: /jobs/frontend-developer-intern
+Allow: /jobs/backend-developer-intern
+Allow: /jobs/ai-llm-developer-intern
+Allow: /jobs/machine-learning-developer-intern
+Allow: /jobs/computer-vision-developer-intern
+Allow: /jobs/marketing
+
+# Allow static assets and media
+Allow: /favicon.ico
+Allow: /logo.png
+Allow: /sports-vector-logo.png
+Allow: /cricket-strategizer-logo.png
+Allow: /hero-image.png
+Allow: /fonts/
+Allow: /images/
+Allow: /assets/
+Allow: /*.css$
+Allow: /*.js$
+Allow: /*.png$
+Allow: /*.jpg$
+Allow: /*.jpeg$
+Allow: /*.gif$
+Allow: /*.svg$
+Allow: /*.webp$
+Allow: /*.ico$
+Allow: /*.woff$
+Allow: /*.woff2$
+Allow: /*.ttf$
+Allow: /*.eot$
+
+# Allow SEO and metadata files - IMPORTANT FOR DISCOVERY
+Allow: /sitemap.xml
+Allow: /llm.txt
+Allow: /robots.txt
+Allow: /manifest.json
+Allow: /browserconfig.xml
+Allow: /.well-known/
+
+# Block sensitive directories and files
+Disallow: /api/
+Disallow: /_next/static/chunks/
+Disallow: /_next/webpack-hmr
+Disallow: /admin/
+Disallow: /private/
+Disallow: /internal/
+Disallow: /config/
+Disallow: /logs/
+Disallow: /tmp/
+Disallow: /cache/
+Disallow: /backup/
+Disallow: /.env*
+Disallow: /.git/
+Disallow: /node_modules/
+Disallow: /package.json
+Disallow: /package-lock.json
+Disallow: /yarn.lock
+Disallow: /tsconfig.json
+Disallow: /next.config.*
+Disallow: /tailwind.config.*
+Disallow: /postcss.config.*
+
+# Sitemap location (primary discovery method)
+Sitemap: https://sportsvector.co/sitemap.xml
+
+# Crawl delay for all bots (helps prevent server overload)
+Crawl-delay: 1
+
+# Specific rules for major search engines
+User-agent: Googlebot
+Allow: /
+Crawl-delay: 1
+# Allow Google to crawl JavaScript and CSS for better rendering
+Allow: /_next/static/
+
+User-agent: Googlebot-Image
+Allow: /
+Allow: /*.png$
+Allow: /*.jpg$
+Allow: /*.jpeg$
+Allow: /*.gif$
+Allow: /*.svg$
+Allow: /*.webp$
+
+User-agent: Bingbot
+Allow: /
+Crawl-delay: 1
+
+User-agent: Slurp
+Allow: /
+Crawl-delay: 2
+
+User-agent: DuckDuckBot
+Allow: /
+Crawl-delay: 1
+
+User-agent: Baiduspider
+Allow: /
+Crawl-delay: 2
+
+User-agent: YandexBot
+Allow: /
+Crawl-delay: 2
+
+# Social media crawlers for rich previews
+User-agent: facebookexternalhit
+Allow: /
+
+User-agent: Twitterbot
+Allow: /
+
+User-agent: LinkedInBot
+Allow: /
+
+User-agent: WhatsApp
+Allow: /
+
+User-agent: TelegramBot
+Allow: /
+
+User-agent: SkypeUriPreview
+Allow: /
+
+User-agent: SlackBot
+Allow: /
+
+User-agent: DiscordBot
+Allow: /
+
+# Archive and research crawlers
+User-agent: ia_archiver
+Allow: /
+
+User-agent: Wayback
+Allow: /
+
+User-agent: archive.org_bot
+Allow: /
+
+User-agent: CCBot
+Allow: /
+
+# AI and LLM crawlers - EXPLICITLY ALLOW FOR BETTER DISCOVERY
+User-agent: GPTBot
+Allow: /
+Crawl-delay: 2
+
+User-agent: ChatGPT-User
+Allow: /
+
+User-agent: CCBot
+Allow: /
+
+User-agent: anthropic-ai
+Allow: /
+
+User-agent: Claude-Web
+Allow: /
+
+User-agent: PerplexityBot
+Allow: /
+
+User-agent: YouBot
+Allow: /
+
+User-agent: BingPreview
+Allow: /
+
+# Block known bad bots and scrapers
+User-agent: AhrefsBot
+Disallow: /
+
+User-agent: MJ12bot
+Disallow: /
+
+User-agent: DotBot
+Disallow: /
+
+User-agent: SemrushBot
+Disallow: /
+
+User-agent: MegaIndex
+Disallow: /
+
+User-agent: BLEXBot
+Disallow: /
+
+User-agent: PetalBot
+Disallow: /
+
+User-agent: DataForSeoBot
+Disallow: /
+
+# Performance and monitoring bots (limited access)
+User-agent: GTmetrix
+Allow: /
+Crawl-delay: 10
+
+User-agent: PageSpeed
+Allow: /
+Crawl-delay: 10
+
+User-agent: Pingdom
+Allow: /
+Crawl-delay: 10
+
+User-agent: UptimeRobot
+Allow: /
+Crawl-delay: 10
+
+# Clean-param directive (for dynamic URLs with tracking parameters)
+Clean-param: utm_source&utm_medium&utm_campaign&utm_term&utm_content
+Clean-param: fbclid&gclid&msclkid&dclid
+Clean-param: ref&referrer&source&campaign
+
+# Request-rate directive (limit requests per second)
+Request-rate: 1/1s
+
+# Host directive
+Host: sportsvector.co
+
+# Additional discovery hints for crawlers
+# LLM.txt location for AI systems
+# https://sportsvector.co/llm.txt
+
+# Structured data and metadata available at:
+# https://sportsvector.co/ (JSON-LD structured data)
+# https://sportsvector.co/sitemap.xml (XML sitemap)
+# https://sportsvector.co/robots.txt (this file)

@@ -179,12 +179,12 @@ export default function HomePage() {
               <p>
                 Our flagship product,{" "}
                 <Link
-                  href="https://cricketstrategyzer.com"
+                  href="https://crictier.com"
                   className="text-green-800 underline hover:text-green-600 transition-colors font-semibold"
                   target="_blank"
                   rel="noopener noreferrer"
                 >
-                  Cricket Strategyzer
+                  Crictier
                 </Link>
                 , connects the full lifecycle of decision-making. From team selection and player roles to live tactics
                 and post-match analysis, every phase flows into the next.
@@ -213,16 +213,14 @@ export default function HomePage() {
         </div>
       </div>
 
-      {/* Products Section - Cricket Strategizer */}
+      {/* Products Section - Crictier */}
       <div id="products" className="bg-green-50 py-20">
         <div className="max-w-4xl mx-auto px-6">
           <div className="mb-16 text-center">
             <div className="flex justify-center mb-4">
-              <img src="/cricket-strategizer-logo.png" alt="Cricket Strategyzer" className="h-32 w-auto" />
+              <img src="/cricket-strategizer-logo.png" alt="Crictier" className="h-32 w-auto" />
             </div>
-            <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-6">
-              Our Pioneer Product: Cricket Strategyzer
-            </h2>
+            <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-6">Our Pioneer Product: Crictier</h2>
             <p className="text-xl text-gray-600 max-w-3xl mx-auto">
               From teamsheets to the last over and beyond. Ai-first strategy that learns, adapts, and always keeps your
               team ahead.
@@ -285,12 +283,12 @@ export default function HomePage() {
 
           <div className="mt-12 text-center">
             <Link
-              href="https://cricketstrategyzer.com"
+              href="https://crictier.com"
               target="_blank"
               rel="noopener noreferrer"
               className="inline-flex items-center px-8 py-4 bg-green-700 text-white font-semibold rounded-lg hover:bg-green-800 transition-colors text-lg"
             >
-              Try Cricket Strategyzer
+              Try Crictier
             </Link>
           </div>
         </div>
@@ -378,7 +376,7 @@ export default function HomePage() {
                 href="mailto:careers@sportsvector.co"
                 className="text-white underline hover:text-gray-300 transition-colors font-semibold"
               >
-                hamza@sportsvector.co
+                info@sportsvector.co
               </Link>
               .
             </p>
@@ -393,7 +391,7 @@ export default function HomePage() {
             <img src="/sports-vector-logo.png" alt="Sports Vector" className="h-16 w-auto" />
             <div className="flex justify-center space-x-12 text-gray-500">
               <Link
-                href="https://cricketstrategyzer.com/blog"
+                href="https://crictier.com/blog"
                 className="hover:text-green-600 transition-colors"
                 target="_blank"
                 rel="noopener noreferrer"
@@ -409,7 +407,7 @@ export default function HomePage() {
                 LinkedIn
               </Link>
               <Link href="mailto:careers@sportsvector.co" className="hover:text-green-600 transition-colors">
-                hamza@sportsvector.co
+                info@sportsvector.co
               </Link>
             </div>
           </div>
