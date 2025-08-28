@@ -3,7 +3,7 @@
   src: url("/fonts/Oxanium-ExtraLight.ttf") format("truetype");
   font-weight: 200;
   font-style: normal;
-  font-display: swap;
+  font-display: block; /* Changed from swap to block to prevent FOUT */
 }
 
 @font-face {
@@ -11,7 +11,7 @@
   src: url("/fonts/Oxanium-Light.ttf") format("truetype");
   font-weight: 300;
   font-style: normal;
-  font-display: swap;
+  font-display: block; /* Changed from swap to block to prevent FOUT */
 }
 
 @font-face {
@@ -19,7 +19,7 @@
   src: url("/fonts/Oxanium-Regular.ttf") format("truetype");
   font-weight: 400;
   font-style: normal;
-  font-display: swap;
+  font-display: block; /* Changed from swap to block to prevent FOUT */
 }
 
 @font-face {
@@ -27,7 +27,7 @@
   src: url("/fonts/Oxanium-Medium.ttf") format("truetype");
   font-weight: 500;
   font-style: normal;
-  font-display: swap;
+  font-display: block; /* Changed from swap to block to prevent FOUT */
 }
 
 @font-face {
@@ -35,7 +35,7 @@
   src: url("/fonts/Oxanium-SemiBold.ttf") format("truetype");
   font-weight: 600;
   font-style: normal;
-  font-display: swap;
+  font-display: block; /* Changed from swap to block to prevent FOUT */
 }
 
 @font-face {
@@ -43,7 +43,7 @@
   src: url("/fonts/Oxanium-Bold.ttf") format("truetype");
   font-weight: 700;
   font-style: normal;
-  font-display: swap;
+  font-display: block; /* Changed from swap to block to prevent FOUT */
 }
 
 @font-face {
@@ -51,7 +51,7 @@
   src: url("/fonts/Oxanium-ExtraBold.ttf") format("truetype");
   font-weight: 800;
   font-style: normal;
-  font-display: swap;
+  font-display: block; /* Changed from swap to block to prevent FOUT */
 }
 
 @tailwind base;
@@ -137,6 +137,24 @@
   }
   body {
     @apply bg-background text-foreground;
+    font-family: "Oxanium", sans-serif;
+  }
+  /* Added fallback font styling to ensure Oxanium is used everywhere */
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6,
+  p,
+  span,
+  div,
+  a,
+  button,
+  input,
+  textarea,
+  select,
+  label {
     font-family: "Oxanium", sans-serif;
   }
 }

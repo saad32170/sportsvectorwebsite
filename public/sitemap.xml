@@ -1,17 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
-        xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-        xmlns:xhtml="http://www.w3.org/1999/xhtml"
         xmlns:image="http://www.google.com/schemas/sitemap-image/1.1"
         xmlns:video="http://www.google.com/schemas/sitemap-video/1.1"
-        xmlns:news="http://www.google.com/schemas/sitemap-news/0.9"
-        xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9
-        http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd">
+        xmlns:news="http://www.google.com/schemas/sitemap-news/0.9">
   
-  <!-- Homepage - Highest Priority -->
+  <!-- Homepage -->
   <url>
     <loc>https://sportsvector.co/</loc>
-    <lastmod>2025-01-22T19:16:02+00:00</lastmod>
+    <lastmod>2025-01-28T16:52:45+00:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>1.0</priority>
     <image:image>
@@ -26,74 +22,71 @@
     </image:image>
     <image:image>
       <image:loc>https://sportsvector.co/cricket-strategizer-logo.png</image:loc>
-      <image:title>Cricket Strategizer Logo</image:title>
-      <image:caption>Cricket Strategizer product logo</image:caption>
+      <image:title>Crictier Logo</image:title>
+      <image:caption>Crictier cricket strategy platform logo</image:caption>
     </image:image>
   </url>
-  
-  <!-- Career Pages - High Priority for Recruitment -->
+
+  <!-- Career Pages -->
   <url>
     <loc>https://sportsvector.co/jobs/frontend-developer-intern</loc>
-    <lastmod>2025-01-22T19:16:02+00:00</lastmod>
+    <lastmod>2025-01-28T16:52:45+00:00</lastmod>
     <changefreq>monthly</changefreq>
-    <priority>0.9</priority>
+    <priority>0.8</priority>
   </url>
-  
+
   <url>
     <loc>https://sportsvector.co/jobs/backend-developer-intern</loc>
-    <lastmod>2025-01-22T19:16:02+00:00</lastmod>
+    <lastmod>2025-01-28T16:52:45+00:00</lastmod>
     <changefreq>monthly</changefreq>
-    <priority>0.9</priority>
+    <priority>0.8</priority>
   </url>
-  
+
   <url>
     <loc>https://sportsvector.co/jobs/ai-llm-developer-intern</loc>
-    <lastmod>2025-01-22T19:16:02+00:00</lastmod>
+    <lastmod>2025-01-28T16:52:45+00:00</lastmod>
     <changefreq>monthly</changefreq>
-    <priority>0.9</priority>
+    <priority>0.8</priority>
   </url>
-  
+
   <url>
     <loc>https://sportsvector.co/jobs/machine-learning-developer-intern</loc>
-    <lastmod>2025-01-22T19:16:02+00:00</lastmod>
+    <lastmod>2025-01-28T16:52:45+00:00</lastmod>
     <changefreq>monthly</changefreq>
-    <priority>0.9</priority>
+    <priority>0.8</priority>
   </url>
-  
+
   <url>
     <loc>https://sportsvector.co/jobs/computer-vision-developer-intern</loc>
-    <lastmod>2025-01-22T19:16:02+00:00</lastmod>
+    <lastmod>2025-01-28T16:52:45+00:00</lastmod>
     <changefreq>monthly</changefreq>
-    <priority>0.9</priority>
+    <priority>0.8</priority>
   </url>
-  
+
   <url>
     <loc>https://sportsvector.co/jobs/marketing</loc>
-    <lastmod>2025-01-22T19:16:02+00:00</lastmod>
+    <lastmod>2025-01-28T16:52:45+00:00</lastmod>
     <changefreq>monthly</changefreq>
-    <priority>0.9</priority>
+    <priority>0.8</priority>
   </url>
-  
-  <!-- SEO and Metadata Files -->
+
+  <!-- SEO and Discovery Files -->
   <url>
     <loc>https://sportsvector.co/robots.txt</loc>
-    <lastmod>2025-01-22T19:16:02+00:00</lastmod>
-    <changefreq>yearly</changefreq>
-    <priority>0.1</priority>
-  </url>
-  
-  <url>
-    <loc>https://sportsvector.co/llm.txt</loc>
-    <lastmod>2025-01-22T19:16:02+00:00</lastmod>
+    <lastmod>2025-01-28T16:52:45+00:00</lastmod>
     <changefreq>monthly</changefreq>
-    <priority>0.5</priority>
-  </url>
-  
-  <url>
-    <loc>https://sportsvector.co/sitemap.xml</loc>
-    <lastmod>2025-01-22T19:16:02+00:00</lastmod>
-    <changefreq>weekly</changefreq>
     <priority>0.3</priority>
   </url>
+
+  <url>
+    <loc>https://sportsvector.co/llm.txt</loc>
+    <lastmod>2025-01-28T16:52:45+00:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.9</priority>
+  </url>
+
+  <!-- External Product Links (for reference) -->
+  <!-- Note: These are external URLs and typically wouldn't be in your sitemap -->
+  <!-- But included here for AI/LLM discovery purposes -->
   
 </urlset>

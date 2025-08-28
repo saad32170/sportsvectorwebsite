@@ -18,7 +18,13 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
-      <body>{children}</body>
+      <head>
+        <link rel="preload" href="/fonts/Oxanium-Regular.ttf" as="font" type="font/ttf" crossOrigin="anonymous" />
+        <link rel="preload" href="/fonts/Oxanium-Medium.ttf" as="font" type="font/ttf" crossOrigin="anonymous" />
+        <link rel="preload" href="/fonts/Oxanium-SemiBold.ttf" as="font" type="font/ttf" crossOrigin="anonymous" />
+        <link rel="preload" href="/fonts/Oxanium-Bold.ttf" as="font" type="font/ttf" crossOrigin="anonymous" />
+      </head>
+      <body className="font-sans">{children}</body>
     </html>
   )
 }
