@@ -176,7 +176,7 @@ export default function HomePage() {
       </div>
 
       {/* Mission Section */}
-      <div id="mission" className="bg-white text-gray-900 leading-4 py-20">
+      <div id="mission" className="bg-white text-gray-900 py-20">
         <div className="max-w-4xl mx-auto px-6">
           <div
             className={`transition-all duration-2000 ease-out delay-500 ${
@@ -222,7 +222,7 @@ export default function HomePage() {
       </div>
 
       {/* Backed by Section */}
-      <div className="bg-white tracking-tighter py-0">
+      <div className="bg-white py-16">
         <div className="max-w-4xl mx-auto px-6">
           <div className="text-center">
             <h3 className="text-lg font-medium text-gray-500 mb-8 tracking-wide uppercase">Backed by</h3>
