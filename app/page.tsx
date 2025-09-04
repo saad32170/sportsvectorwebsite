@@ -176,7 +176,7 @@ export default function HomePage() {
       </div>
 
       {/* Mission Section */}
-      <div id="mission" className="bg-white text-gray-900 py-20">
+      <div id="mission" className="bg-white text-gray-900 leading-4 py-20">
         <div className="max-w-4xl mx-auto px-6">
           <div
             className={`transition-all duration-2000 ease-out delay-500 ${
@@ -216,6 +216,43 @@ export default function HomePage() {
               <p>No shortcuts. Just strategy that works.</p>
 
               <p className="text-gray-600 mt-12">— Saad and Hamza</p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      {/* Backed by Section */}
+      <div className="bg-white tracking-tighter py-0">
+        <div className="max-w-4xl mx-auto px-6">
+          <div className="text-center">
+            <h3 className="text-lg font-medium text-gray-500 mb-8 tracking-wide uppercase">Backed by</h3>
+            <div className="flex items-center justify-center space-x-12 md:space-x-16">
+              {/* Google Cloud */}
+              <div className="flex items-center opacity-80 hover:opacity-100 transition-opacity duration-300">
+                <img
+                  src="/images/partners/cloud_lockup-669717fc.png"
+                  alt="Google Cloud"
+                  className="h-12 md:h-16 w-auto transition-all duration-300"
+                />
+              </div>
+
+              {/* Microsoft Azure */}
+              <div className="flex items-center opacity-80 hover:opacity-100 transition-opacity duration-300">
+                <img
+                  src="/images/partners/azure-logo.png"
+                  alt="Microsoft Azure"
+                  className="h-12 md:h-16 w-auto transition-all duration-300"
+                />
+              </div>
+
+              {/* Cloudflare */}
+              <div className="flex items-center opacity-80 hover:opacity-100 transition-opacity duration-300">
+                <img
+                  src="/images/partners/Cloudflare_Logo.png"
+                  alt="Cloudflare"
+                  className="h-12 md:h-16 w-auto transition-all duration-300"
+                />
+              </div>
             </div>
           </div>
         </div>
